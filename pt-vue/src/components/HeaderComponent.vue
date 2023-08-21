@@ -28,7 +28,7 @@
     <ul
       class="sub-menu-box"
       :class="{
-        'open-height': bottomMenu.filter((el) => el.open === ture).lenght !== 0,
+        'open-height': bottomMenu.filter((el) => el.open === true).length !== 0,
       }"
     ></ul>
   </div>
@@ -87,7 +87,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   width: 100%;
   flex: 1;
 }
@@ -123,9 +123,10 @@ export default {
   background-color: #2c2a29;
   width: 100%;
   margin: 0;
+  height: 0px;
   transition: all 0.35s ease-in-out;
 }
 .open-height {
-  height: 50px;
+  height: 150px;
 }
 </style>
